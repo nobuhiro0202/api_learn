@@ -1,0 +1,24 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = false
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+space_before_semicolon = false
+space_before_empty_method_call_parentheses = false
+space_between_method_call_name_and_opening_parenthesis = false
+space_before_method_parentheses_anonymous = false
+
+[Makefile]
+indent_size = 4
+indent_style = tab
+
+[*.{md,markdown}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[*.json]
+insert_final_newline = false
