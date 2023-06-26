@@ -1,8 +1,10 @@
 import express from 'express';
-import UserRoutes from './user/UserRoutes';
+import UserRoutes from './UserRoutes';
+import FriendsRoutes from './FriendsRoutes';
 
 const router = express.Router();
 
-router.get('/users', UserRoutes);
+router.use('/users', UserRoutes);
+router.use('/users/:id/friends', FriendsRoutes);
 
 export default router;
