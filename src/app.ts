@@ -8,6 +8,6 @@ const
   app = express(),
   port = process.env.PORT || 8000;
 
-app.use('/', routes);
+app.use('/v1', routes);
 
 app.listen(port, () => console.log(`Server is listening on ${port}`));

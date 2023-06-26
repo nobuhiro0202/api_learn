@@ -1,10 +1,8 @@
 import express from 'express';
-import RootRoutes from './root/RootRoutes';
-import HelloRoutes from './hello/HelloRoutes';
+import UserRoutes from './user/UserRoutes';
 
 const router = express.Router();
 
-router.get('/', RootRoutes);
-router.get('/hello', HelloRoutes);
+router.get('/users', UserRoutes);
 
 export default router;
