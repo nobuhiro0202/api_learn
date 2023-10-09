@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: psql
+    environment:
+      POSTGRES_USER: api_user
+      POSTGRES_PASSWORD: gersigrnaeg
+      POSTGRES_DB: sns
+    ports:
+      - "5432:5432"
+    volumes:
+    - ./src/db:/docker-entrypoint-initdb.d

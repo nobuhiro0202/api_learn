@@ -6,5 +6,6 @@ const router = express.Router();
 router.get('/', friendsHandler.getFriends);
 router.post('/', friendsHandler.addFriends);
 router.delete('/:id', friendsHandler.deleteFriends);
+router.get('/updates', friendsHandler.getUpdates);
 
 export default router;
